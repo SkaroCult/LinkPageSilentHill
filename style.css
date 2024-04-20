@@ -1,0 +1,345 @@
+@font-face {
+    font-family: font1;
+    src: url(font/Titania-Regular.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(font/HeavyRain_PERSONAL_USE_ONLY.ttf);
+}
+@font-face {
+    font-family: font3;
+    src: url(font/Rumble\ Brave.otf);
+}
+@font-face {
+    font-family: font4;
+    src: url(font/TrajanusBricks.ttf);
+}
+@font-face {
+    font-family: font5;
+    src: url(font/aAbsoluteEmpire.ttf);
+}
+@font-face {
+    font-family: font6;
+    src: url(font/Archeologicaps.ttf);
+}
+@font-face {
+    font-family: font7;
+    src: url(font/handwriting-black-draft_DEMO.otf);
+}
+@font-face {
+    font-family: font8;
+    src: url(font/Hatch.ttf);
+}
+@font-face {
+    font-family: font9;
+    src: url(font/SLNTHLC.TTF);
+}
+
+*{
+    border: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden hidden;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+div#red{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 300vh;
+    background-color: red;
+    display: none;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+/*----------INTRO----------*/
+section#intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section#intro div.click{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+section#intro div.click img{
+    width: 85vh;
+    margin-bottom: 10px;
+}
+section#intro div.click h2{
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: font7;
+    cursor: pointer;
+}
+section#intro div.click h3{
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: font9;
+    color: rgb(58, 58, 58);
+}
+/*----------SOBRE----------*/
+section#sobre{
+    background:url(./img/stairs.jpg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+section#sobre div#me{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin: 20px;
+    cursor: default;
+}
+section#sobre div#me h1{
+    font-size: 4em;
+    font-family: font8;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+section#sobre div#me h2{
+    margin-top:15px;
+    font-size: 1.5em;
+    width: 40%;
+    text-align: justify;
+    font-family: font6;
+}
+section#sobre div#me h3{
+    margin-top:15px;
+    font-size: 1.9em;
+    width: 40%;
+    text-align: right;
+    font-family: font3;
+    letter-spacing: 3px;
+}
+section#sobre div#next{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin: 20px;
+    & *{
+        cursor: pointer;
+    }
+}
+section#sobre div#next div.link{
+    font-size: 1.6em;
+    text-transform: uppercase;
+    border: solid 2px rgb(134, 89, 89);
+    border-radius: 4px;
+    padding: 0.3em;
+    color: rgb(255, 163, 163);
+    font-family: font7;
+    letter-spacing: 0.2em;
+    transition: 0.6s;
+    &:hover{
+        color: red;
+        border: solid 2px rgb(177, 20, 20);
+        background-color: rgba(63, 1, 1, 0.158);
+    }
+}
+section#sobre div#next div.intro{
+    font-size: 1.6em;
+    text-transform: uppercase;
+    border: solid 2px rgb(134, 82, 82);
+    border-radius: 4px;
+    padding: 0.3em;
+    color: rgb(255, 163, 163);
+    font-family: font7;
+    letter-spacing: 0.2em;
+    margin-left: 1em;
+    transition: 0.6s;
+    &:hover{
+        color: red;
+        border: solid 2px rgb(177, 20, 20);
+        background-color: rgba(63, 1, 1, 0.158);
+    }
+}
+
+/*----------LINKS----------*/
+section#link{
+    background: url(img/cama.jpg) center right no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+section#link ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+section#link ul li{
+    border: solid 1px white;
+    border-radius: 4px;
+    padding: 0px 10px;
+    width: 320px;
+    cursor: pointer;
+    &:hover{
+        border:solid 1px rgb(43, 53, 99);
+        background: url(img/JamesMirror.jpg) center center no-repeat;
+        background-size: cover;
+    }
+}
+section#link ul li *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section#link ul li i{
+    font-size: 25px;
+}
+section#link ul li h2{
+    font-size: 20px;
+    font-family: font6;
+    margin: 15px;
+}
+section#link ul li img{
+    width: 25px;
+    filter: saturate(0);
+    &:first-child{
+        border-radius: 5px;
+    }
+}
+section#link ul li a#x{
+    height: 60px;
+}
+section#link div.click{
+    border: 1px solid rgb(22, 15, 1);
+    border-radius: 3px;
+    margin: 15px;
+    font-family: font1;
+    height: fit-content;
+    padding: 13px;
+    font-size: 27px;
+    color: rgb(22, 15, 1);
+    transition: 0.4s;
+    cursor: pointer;
+    &:hover{
+        color: rgb(104, 72, 10);
+        border: 1px solid rgb(104, 72, 10);
+    }
+}
+
+/*----------KEYFRAMES----------*/
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes desaparece{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/*----------RESPONSIVO----------*/
+@media (max-width:655px) {
+    section#intro div.click img{
+        width: 350px;
+    }
+    section#intro div.click h2{
+        font-size: 20px;
+        margin: 0px 10px;
+    }
+}
+@media (max-width:780px){
+    section#sobre{
+        background-position: left;
+    }
+    section#sobre div#me h2{
+        font-size: 18px;
+    }
+    section#sobre div#next{
+        font-size: 12px;
+    }
+
+}
+@media (max-width:370px){
+    section#intro div.click img{
+        width: 300px;
+    }
+    section#intro div.click h2{
+        font-size: 15px;
+        margin: 0px 5px;
+    }
+}
+@media (max-width:670px){
+    section#sobre{
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+    section#sobre div#me{
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        & h2{
+            width: 50%;
+        }
+    }
+    section#link{
+        flex-direction: column;
+        align-items: center;
+        background: url(img/camalow.jpg) bottom center no-repeat;
+        background-size: cover;
+    }
+    section#link ul{
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    section#link ul li{
+        width: 250px;
+        height: fit-content;
+    }
+    section#link ul li i{
+        font-size: 15px;
+    }
+    section#link ul li h2{
+        font-size: 15px;
+    }
+    section#link div.click{
+        width: fit-content;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+@media (max-width:480px){
+    section#sobre div#me h2{
+        width: 80%;
+        font-size: 17px;
+    }
+    section#sobre div#me h3{
+        font-size: 20px;
+    }
+    section#sobre div#next div.intro{
+        font-size: 15px;
+    }
+    section#sobre div#next div.link{
+        font-size: 15px;
+    }
+}
